@@ -6,7 +6,7 @@ description: Likes, dislikes, and a rating of Heartifitial Intelligence by John 
 image: /assets/images/AI.jpg
 ---
 ### Intro
-In his book "Heartifitial Intelligence," John C. Havens explores the ethical implications of artifitial intelligence (AI) on society. The past, present, and future of technological advancements are brought into the light as Havens shares the importance of finding balance between ethical standards, AI in our lives, and humanity.
+In his book "Heartifitial Intelligence," John C. Havens explores the ethical implications of artifitial intelligence (AI) on society. The past, present, and future of technological advancements are brought into the light as Havens shares the importance of finding balance between ethical standards, AI and machine learning, and humanity.
 
 ### Likes
 I enjoyed how this book made me self assess my technology use and raise awareness towards the dependency humans can have on AI. Havens invites his readers to ponder multiple AI senarios throughout the text that allow for connections of relevence and importance to our everyday lives. He also isn't afraid to ask tough questions reguarding one's morality and values towards the integration of AI. Although this book discusses serious, heavy topics, I enjoyed the feeling of hope that Havens held from start to end. One of the main takeaways I will remember from this book is the ideal that technology needs to be created and further developed with empathy and compassion.
