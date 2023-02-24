@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Book Review - "Heartifitial Intelligence" by John C. Havens"
+title:  "Book Review - Heartifitial Intelligence by John C. Havens"
 author: Amber Aiwohi
-description: Likes, dislikes, and a rating of "Heartifitial Intelligence" by John C. Havens
+description: Likes, dislikes, and a rating of Heartifitial Intelligence by John C. Havens
 image: /assets/images/AI.jpg
 ---
 ### Intro
