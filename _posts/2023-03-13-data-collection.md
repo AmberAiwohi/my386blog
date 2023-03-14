@@ -10,6 +10,8 @@ We've all seen our fair share of superhero movies. They're so popular nowadays t
 
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/supercomic.jpg)
 
+Complete code and data can be found at [this GitHub repo](https://github.com/AmberAiwohi/superheros).
+
 # Data Collection
 ## Tools
 Python and the beautiful soup package were used to web scrape [this collection of superhero movies](https://www.imdb.com/list/ls074940992/?sort=list_order,asc&st_dt=&mode=detail&page=1).
