@@ -14,10 +14,10 @@ Complete code and data can be found at [this GitHub repo](https://github.com/Amb
 
 # Data Collection
 ## Tools
-Python and specifically the Requests and Beautiful Soup packages were used to web scrape [this collection of superhero movies](https://www.imdb.com/list/ls074940992/?sort=list_order,asc&st_dt=&mode=detail&page=1). Because I'm not gaining any monetary value or praise from the data I scraped, it is ethical for me to use this data as I strive to increase my data analysis skills. I implemented good scraping practices by not changing or ignoring any information found on the website as I created the dataframe. I also would like to thank the creators of the website for compiling all the information in one place. Below is how I web scraped and created the movies dataframe. 
+Python, and specifically the Requests and Beautiful Soup packages, were used to web scrape [this collection of superhero movies](https://www.imdb.com/list/ls074940992/?sort=list_order,asc&st_dt=&mode=detail&page=1). Because I'm not gaining any monetary value or praise from the data I scraped, it is ethical for me to use this data as I strive to increase my data analysis skills. I implemented good scraping practices by not changing or ignoring any information found on the website as I created the dataframe. I also would like to thank the creators of the website for providing this information. Below is how I web scraped and created the movies dataframe. 
 
 ## Step 1: Create Beautiful Soup Object
-After choosing which website you wanted to scrape, load the url into an object.
+After choosing which website you want to scrape, create a url object.
 ```
 url = "https://www.imdb.com/list/ls074940992/"
 ```
@@ -28,7 +28,7 @@ bs = BeautifulSoup(r0.text)
 ```
 
 ## Step 2: Extract Wanted Tags
-Knowing what html code contains the information you want can be tricky. To search for this specific code, right click on the webpage you're scraping and click 'inspect.' Enable inspection by your curser and explore the parts of the webpage you are interesting in scraping. The information you want is likely inside of a nested tag. I like to think of these tags as Russian nesting dolls. In the example below, the first tag we're interested in is a div tag. Next, we navigate to a h3 tag. Finally, the title of the movie is found in an a tag. The title was found in a tag within a tag within a tag, just like smaller dolls are nested within bigger dolls. If needed, specify the tag by the class as seen below. 
+Knowing what html code contains the information you want can be tricky. To search for this specific code, right click on the webpage you're scraping and click 'inspect.' Enable curser inspection and explore the parts of the webpage you are interested in scraping. The information you want is likely inside of a tag, most likely a nested tag. I like to think of these tags as Russian nesting dolls. In the example below, the first tag we're interested in is a div tag. Next, we navigate to a h3 tag. Finally, the title of the movie is found in an a tag. The title was found in a tag within a tag within a tag, just like smaller dolls are nested within bigger dolls. If needed, specify the tag by the class as seen below. 
 ```
 # extract the div tag 
 div = bs.find_all("div", {"class": "lister-item-content"})
@@ -70,7 +70,7 @@ def pull_runtime(d):
 runtimes_pulled = [pull_runtime(d) for d in div]
 ```
 ### Method 3
-Below is another method of how to extract wanted information: using a for loop. When extracting the gross for each movie, I had to index to the tag I wanted since there were multiple tags named the same thing, having the same class. I created an empty list, then looped through all the div tags to pull the gross, then added or appended those values to the empty list. 
+Below is another method of how to extract wanted information using a for loop. When extracting the gross for each movie, I had to index to the tag I wanted since there were multiple tags named the same thing, having the same class. I created an empty list, then looped through all the div tags to pull the gross, then added or appended those values to the empty list. 
 ```
 # for loop to extract gross
 gross = []
@@ -98,6 +98,6 @@ You now have an easy-to-read dataframe that allows you to have fun with explorin
 # Conclusion
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/super.jpg)
 
-In this post, I explained how I web scraped in order to compile a dataframe of 200 superhero movies. I plan to use exploratory data analysis to find any trends or similaries among these movies. What makes a great superhero movie? Let's find out! 
+In this post, I explained how I web scraped in order to compile a dataframe of 200 superhero movies. Web scraping can be tricky, but as long as you know where to look, you'll be able to access the information needed. I plan to use exploratory data analysis to find any trends or similaries among my dataset of movies. What makes a great superhero movie? Let's find out! 
 
-If you have any questions, comments, or concerns, please leave them in the comments below. I'd also love to know, what's your favorite superhero movie?
+If you have any questions, comments, or concerns, please leave them in the comment section below. I'd also love to know, what's your favorite superhero movie?
