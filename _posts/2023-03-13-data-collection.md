@@ -14,15 +14,19 @@ Complete code and data can be found at [this GitHub repo](https://github.com/Amb
 
 # Data Collection
 ## Tools
-Python and the beautiful soup package were used to web scrape [this collection of superhero movies](https://www.imdb.com/list/ls074940992/?sort=list_order,asc&st_dt=&mode=detail&page=1).
+Python and specifically the Requests and Beautiful Soup packages were used to web scrape [this collection of superhero movies](https://www.imdb.com/list/ls074940992/?sort=list_order,asc&st_dt=&mode=detail&page=1). Because I'm not gaining any monetary value or praise from the data I scraped, it is ethical for me to use this data as I strive to increase my data analysis skills. I implemented good scraping practices by not changing or ignoring any information found on the website as I created the dataframe. I also would like to thank the creators of the website for compiling all the information in one place. Below is how I web scraped and created the movies dataframe. 
 
-## Step 1: Create Beautiful Soup (BS) Object
+## Step 1: Create Beautiful Soup Object
+I used three different urls since 
 
 ## Step 2: Extract Wanted Tags
 
+
 ## Step 3: Loop Through to Pull Wanted Information
+
 
 ## Step 4: Create a Dataframe
 
 
 # Conclusion
+
