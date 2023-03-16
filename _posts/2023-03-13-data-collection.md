@@ -14,7 +14,6 @@ Complete code and data can be found at [this GitHub repo](https://github.com/Amb
 
 # Data Collection
 ## Tools
-<img src="https://raw.githubusercontent.com/esnt/my386blog/main/assets/images/python.jpg" alt="" style="width:400px;"/><img src="https://raw.githubusercontent.com/esnt/my386blog/main/assets/images/request.jpg" alt="" style="width:400px;"/><img src="https://raw.githubusercontent.com/esnt/my386blog/main/assets/images/bs.jpg" alt="" style="width:400px;"/>
 Python and specifically the Requests and Beautiful Soup packages were used to web scrape [this collection of superhero movies](https://www.imdb.com/list/ls074940992/?sort=list_order,asc&st_dt=&mode=detail&page=1). Because I'm not gaining any monetary value or praise from the data I scraped, it is ethical for me to use this data as I strive to increase my data analysis skills. I implemented good scraping practices by not changing or ignoring any information found on the website as I created the dataframe. I also would like to thank the creators of the website for compiling all the information in one place. Below is how I web scraped and created the movies dataframe. 
 
 ## Step 1: Create Beautiful Soup Object
@@ -93,8 +92,8 @@ df['Gross'] = gross
 You now have an easy-to-read dataframe that allows you to have fun with exploring the data!
 
 # Conclusion
-<img src="https://raw.githubusercontent.com/esnt/my386blog/main/assets/images/super.jpg" alt="" style="width:400px;"/>
+![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/super.jpg)
 
 In this post, I explained how I web scraped in order to compile a dataframe of 200 superhero movies. I plan to use exploratory data analysis to find any trends or similaries among these movies. What makes up a great superhero movie? Let's find out! 
 
-If you have any questions, comments, or concerns, please leave them in the comments below. I'd also love to know, what's your favorite superhero movie? Mine is Doctor Strange. 
+If you have any questions, comments, or concerns, please leave them in the comments below. I'd also love to know, what's your favorite superhero movie?
