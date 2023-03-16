@@ -33,7 +33,9 @@ Knowing what html code contains the information you want can be tricky. To searc
 # extract the div tag 
 div = bs.find_all("div", {"class": "lister-item-content"})
 ```
-Loop through to pull wanted information from tags. I used list comprehension to hold the information.
+Loop through to pull wanted information from tags. 
+# Method 1
+Use list comprehension. 
 ```
 # extract title
 titles = [d.find('h3').find('a').text for d in div]
@@ -44,6 +46,7 @@ year = [d.find('h3').find('span',{"class":"lister-item-year text-muted unbold"})
 # extract genre
 genre = [d.find('p').find('span',{"class":"genre"}).text for d in div]
 ```
+# Method 2
 Sometimes the above method of extracting the information will throw an error. This is most likely because there are missing values that the code doesn't know what to do with. In this case, create a function to assign a None value to those missing values. Call this function to perform the extraction. 
 ```
 # create function to extract rating
@@ -66,6 +69,7 @@ def pull_runtime(d):
 # call function to extract runtime
 runtimes_pulled = [pull_runtime(d) for d in div]
 ```
+# Method 3
 Below is another method of how to extract wanted information: using a for loop. When extracting the gross for each movie, I had to index to the tag I wanted since there were multiple tags named the same thing, having the same class. I created an empty list, then looped through all the div tags to pull the gross, then added or appended those values to the empty list. 
 ```
 # for loop to extract gross
@@ -94,6 +98,6 @@ You now have an easy-to-read dataframe that allows you to have fun with explorin
 # Conclusion
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/super.jpg)
 
-In this post, I explained how I web scraped in order to compile a dataframe of 200 superhero movies. I plan to use exploratory data analysis to find any trends or similaries among these movies. What makes up a great superhero movie? Let's find out! 
+In this post, I explained how I web scraped in order to compile a dataframe of 200 superhero movies. I plan to use exploratory data analysis to find any trends or similaries among these movies. What makes a great superhero movie? Let's find out! 
 
 If you have any questions, comments, or concerns, please leave them in the comments below. I'd also love to know, what's your favorite superhero movie?
