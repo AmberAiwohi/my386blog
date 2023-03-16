@@ -33,9 +33,9 @@ Knowing what html code contains the information you want can be tricky. To searc
 # extract the div tag 
 div = bs.find_all("div", {"class": "lister-item-content"})
 ```
-Loop through to pull wanted information from tags. 
-# Method 1
-Use list comprehension. 
+
+### Method 1
+Loop through to pull wanted information from tags using list comprehension.
 ```
 # extract title
 titles = [d.find('h3').find('a').text for d in div]
@@ -46,7 +46,7 @@ year = [d.find('h3').find('span',{"class":"lister-item-year text-muted unbold"})
 # extract genre
 genre = [d.find('p').find('span',{"class":"genre"}).text for d in div]
 ```
-# Method 2
+### Method 2
 Sometimes the above method of extracting the information will throw an error. This is most likely because there are missing values that the code doesn't know what to do with. In this case, create a function to assign a None value to those missing values. Call this function to perform the extraction. 
 ```
 # create function to extract rating
@@ -69,7 +69,7 @@ def pull_runtime(d):
 # call function to extract runtime
 runtimes_pulled = [pull_runtime(d) for d in div]
 ```
-# Method 3
+### Method 3
 Below is another method of how to extract wanted information: using a for loop. When extracting the gross for each movie, I had to index to the tag I wanted since there were multiple tags named the same thing, having the same class. I created an empty list, then looped through all the div tags to pull the gross, then added or appended those values to the empty list. 
 ```
 # for loop to extract gross
