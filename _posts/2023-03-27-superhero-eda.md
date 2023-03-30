@@ -31,7 +31,8 @@ This EDA helps us visualize a few patterns:
 - The longer the runtime, the higher gross.
 - PG-13 movies are the highest grossing on average. 
 - Superhero movies classified as action, adventure, sci-fi are the most common.
-- As time goes on, gross is increasing. 
+- 2011 had the most superhero movies produced.
+- Gross increases as the years pass.
 
 What else do you notice from these plots? What questions do you have about this data and want answered through EDA? Please feel free to leave any questions or comments in the section below. 
 
