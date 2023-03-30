@@ -6,7 +6,7 @@ description: Using exploratory data analysis to visualize any trends that superh
 image: /assets/images/supergirl.jpg
 ---
 # Introduction
-In my [last blog post](https://amberaiwohi.github.io/my386blog/2023/03/13/data-collection.html), I explained how I used web scrapping to gather data about the top 200 superhero movies. Since I now have a dataframe to work with, I'm excited to share how I used exploratory data analysis to learn more about these superhero movies and see if I can find any similaries or patterns. 
+In my [last blog post](https://amberaiwohi.github.io/my386blog/2023/03/13/data-collection.html), I explained how I used web scrapping to gather data about the top 200 superhero movies. Since I now have a dataframe to work with, I'm excited to share how I used exploratory data analysis to learn more about these superhero movies and see if I can find any similarities or patterns. 
 
 # Let's Explore (EDA)
 There are many different ways to determine the success of a movie. Some ways include looking at the Rotten Tomatoes score or counting how many tickets were sold opening weekend. For this EDA, I'm going to be identifying the success of a movie based off of its gross. I wanted to see if a certain genre, runtime, year, or rating was particularly popular among superhero movies. My EDA graphs and findings can be found below whereas my EDA code can be found in [this Github repository](https://github.com/AmberAiwohi/superheros).
