@@ -12,43 +12,52 @@ In my [last blog post](https://amberaiwohi.github.io/my386blog/2023/03/13/data-c
 There are many different ways to determine the success of a movie. Some ways include looking at the Rotten Tomatoes score or counting how many tickets were sold opening weekend. For this EDA, I'm going to be identifying the success of a movie based off of its gross. I wanted to see if a certain genre, runtime, year, or rating was particularly popular among superhero movies. My EDA graphs and findings can be found below whereas my EDA code can be found in [this Github repository](https://github.com/AmberAiwohi/superheros).
 
 ## Runtime
-When looking at the plot below, we can see that there seems to be a positive relationship between the length of the movie and its gross. Longer movies seem to have a higher gross. This may be due to the fact that people want lots of bang for their buck. If they're going to spend $10 on a movie ticket reguardless of how long the movie is, it might as well be for a longer movie where audience members can sit in the comfy theater seats with a big screen and surround sound. The farthest and highest point of this graph is important to take note of. This point represents the Avengers: Endgame movie, which was thee movie to see when it hit theaters. However, this may be an outlier. 
+Are there any patterns between runtime and gross?
 
 <iframe
   src="https://AmberAiwohi.github.io//my386blog/assets/images/runtime.html"
   style="width:100%; height:500px;"
 ></iframe>
 
+In the above plot, I color coded the points by rating to see if there were any similar trends. We can see that there seems to be a positive relationship between the length of the movie and its gross. Longer movies seem to have a higher gross. Feel free to interact with this plot by hovering over the points and seeing which points represent which movies. 
+
+I also wanted to see if there was an overall trend without honing in on the rating. 
+
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/runtime_lowess.png)
 
+In the graph above, we see the same positive trend between runtime and gross. The farthest and highest points in both graphs are important to take note of. These two points represent the Avengers: Endgame movie, which may be an outlier. 
+
 ## Rating
-From the previous graph and the graph below, we can see that PG-13 movies may be the most popular rating among superhero movies. Reguardless of whether it's the most popular rating, we can also see that PG-13 movies bring in the most money with a higher gross than movies rated differently. I think this may be due to the large age range that PG-13 movies tend to attract. Rated R movies restrict the age of viewers, and PG movies aren't always created for those who will spend money throughout the week to go to the movie theater. PG-13 is the rating to be for superhero movies wanting a higher gross. 
+Are there any trends between movie rating and gross?
 
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/rating.png)
 
+When looking at the above plot as well as the Runtime vs. Gross plot, we can see that PG-13 is the most common rating among superhero movies. We can also see that PG-13 movies bring in the most money with a higher gross. This could be due to the large age range that PG-13 movies tend to attract. Rated R movies restrict the age of viewers, and PG movies aren't always created for those who will spend money throughout the week to go to the movie theater. PG-13 is the rating to be for superhero movies wanting a higher gross. 
+
 ## Genre
-It was somewhat difficult to perform EDA with reguards to the genre because the genres collected were specific and consisted of multiple genres indicating each movie. However, we are still able to learn more about the data from our plots. First, I was curious to know what the top superhero movie genre is in terms of frequency, which we can see is action, adventure, sci-fi. 
+What is the most common superhero movie genre? 
+
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/genre.png)
 
-We can also note that most of the 200 superhero movies explored are classified as an action movie. From our second plot, it's difficult to draw any conclusions, but we are able to interact with the graph and explore the movies grouped by genre. 
+It was somewhat difficult to perform EDA with reguards to the genre because the genres collected were specific and consisted of multiple genres for each movie. However, we are still able to learn more about the data from our plots. In the plot above, unfortunatly the genre's for each bar are cut off, but you're able to view this graph when looking at the [.ipybn file](https://github.com/AmberAiwohi/superheros/blob/main/superheroEDA.ipynb) in [this repository](https://github.com/AmberAiwohi/superheros). You're going to have to trust me, but action, adventure, sci-fi movies are the most common. 
 
 <iframe
   src="https://AmberAiwohi.github.io//my386blog/assets/images/genre.html"
   style="width:100%; height:500px;"
 ></iframe>
 
+We can note that most of the 200 superhero movies explored are classified as an action movie. From the Genre vs. Gross plot, it's difficult to draw any conclusions, but feel free to interact with the graph and explore the movies grouped by genre. 
+
 ## Year
-When looking at the year, I was curious as to which year had the most movies produced. From the bar chart below, we can see that 2011 has the highest number of superhero movies produced with 11 movies. 
+In what year were the highest number of superhero movies produced? 
+
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/mov_per_year.png)
 
-From the Year vs. Gross plot, we see a slight positive trend as the gross seems to increase as the years go by. This could be an indicator that superhero movies have become increasingly popular or better produced over the years. It may be important to note inflation costs, which may be correlated to increased gross. 
-
-<iframe
-  src="https://AmberAiwohi.github.io//my386blog/assets/images/year.html"
-  style="width:100%; height:500px;"
-></iframe>
+From the bar chart above, we can see that 2011 has the highest number of superhero movies produced with 11 movies. 
 
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/year_lowess.png)
+
+From the scatter plot above, we see a slight positive trend as the gross seems to increase as the years go by. This could be an indicator that superhero movies have become increasingly popular or better produced over the years. It may be important to note inflation costs, which may have affected increased gross. 
 
 # Conclusion
 This EDA helps us visualize a few patterns:
