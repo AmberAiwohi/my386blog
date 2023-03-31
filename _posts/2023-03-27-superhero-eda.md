@@ -6,7 +6,7 @@ description: Using exploratory data analysis to visualize any trends that superh
 image: /assets/images/supergirl.jpg
 ---
 # Introduction
-In my [last blog post](https://amberaiwohi.github.io/my386blog/2023/03/13/data-collection.html), I explained how I used web scrapping to gather data about the top 200 superhero movies. Since I now have a dataframe to work with, I'm excited to share how I used exploratory data analysis to learn more about these superhero movies and see if I can find any similarities or patterns. 
+In my [last blog post](https://amberaiwohi.github.io/my386blog/2023/03/13/data-collection.html), I explained how I used web scrapping to gather data pertaining to the top 200 superhero movies. Since I now have a dataframe to work with, I'm excited to share how I used exploratory data analysis to learn more about these superhero movies and see if I can find any similarities or patterns. 
 
 
 # Let's Explore (EDA)
@@ -50,7 +50,7 @@ It was somewhat difficult to perform EDA with reguards to the genre because the 
 We can note that most of the 200 superhero movies explored are classified as an action movie. From the Genre vs. Gross plot, it's difficult to draw any conclusions, but feel free to interact with the graph and explore the movies grouped by genre. 
 
 ## Year
-In what year were the highest number of superhero movies produced? 
+In what year was the highest number of superhero movies produced? 
 
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/mov_per_year.png)
 
@@ -58,12 +58,12 @@ From the bar chart above, we can see that 2011 has the highest number of superhe
 
 ![Figure](https://github.com/AmberAiwohi/my386blog/raw/main/assets/images/year_lowess.png)
 
-From the scatter plot above, we see a slight positive trend as the gross increased with time. This could be an indicator that superhero movies have become increasingly popular or better produced over the years. It may be important to note inflation costs, which may have affected increased gross. 
+From the scatter plot above, we see a slight positive trend as the gross increased with time. This could be an indicator that superhero movies have become increasingly popular or better produced over the years. It may be important to note that inflation costs may be a factor of increased gross represented on this graph. 
 
 # Conclusion
 This EDA helps us visualize a few patterns:
 
-- The longer the runtime, the higher gross.
+- The longer the runtime, the higher the gross.
 - PG-13 movies are the highest grossing on average. 
 - Superhero movies classified as action, adventure, sci-fi are the most common.
 - 2011 had the most superhero movies produced.
